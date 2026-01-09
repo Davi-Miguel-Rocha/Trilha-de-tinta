@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Benefícios de Desenhar</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+
+  <style>
+       
+     body {
+  background-image: url('static/Obras/kanagawa.jpg');
+  background-size: cover;
+  background-position: center;
+}      
+  </style>
+</head>
+<body>
+
+    <div class="navegacao">
+        <a href="{{ url_for('index') }}"> HOME </a> |
+        <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+        <a href="{{ url_for('obras') }}"> OBRAS </a> |
+        <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+        <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+        <div id="Escrever_Nome">
+      </div>  
+        <div><span id="setinha">&#x2193;</span></div> |
+        <div id="opcoesAlterar">
+          <button id="alterarNome">Alterar Nome</button>
+          <div id="fotoPerfilContainer">
+            <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+            <button id="carregar_imagem">Carregar Imagem</button>
+            <input type="file" id="upload" style="display:none" accept="image/*" />
+          </div>
+        </div>
+      </div>
+  <div id="conteudo">
+    <h1>Por que desenhar pode mudar sua vida?</h1>
+
+    <div class="texto">
+      <p>
+        O ato de desenhar vai muito além de criar imagens bonitas. É uma forma profunda de expressão,
+        meditação e autoconhecimento. Ao desenhar, você se conecta com o presente, desacelera a mente
+        e exercita habilidades importantes como a observação, a paciência e a criatividade.
+      </p>
+    </div>
+
+    <div>
+      <ul>
+        <li><strong>Redução do estresse:</strong> Desenhar ajuda a acalmar os pensamentos e relaxar.</li>
+        <li><strong>Foco e atenção:</strong> Desenvolve a capacidade de concentração e observação.</li>
+        <li><strong>Autoconhecimento:</strong> Você aprende mais sobre si mesmo ao observar o que cria.</li>
+        <li><strong>Confiança:</strong> Ver sua evolução fortalece a autoestima.</li>
+        <li><strong>Expressão emocional:</strong> O traço transmite o que às vezes palavras não conseguem.</li>
+      </ul>
+    </div>
+
+    <div>
+      <p>
+        No <em>Trilha de Tinta</em>, desenhar é uma forma de cuidar de si. Uma pausa no mundo,
+        um momento seu. E você não precisa ser artista — só precisa começar.
+      </p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+</body>
+</html>

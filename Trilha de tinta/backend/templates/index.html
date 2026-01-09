@@ -1,0 +1,85 @@
+<DOCTYPE hmtl>
+<hmtl>
+ <head>
+
+ 	<title>AVISOS| Trilha de tinta</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+     <style>
+
+     body {
+background-image: url('/static/Obras/hokusai.jpg');
+
+  background-size: cover;
+  background-position: center;
+}     
+
+
+     
+    </style>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+ </head>
+
+ <body>
+
+  <div class="navegacao">
+    <a href="{{ url_for('index') }}"> HOME </a> |
+    <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+    <a href="{{ url_for('obras') }}"> OBRAS </a> |
+    <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+    <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+    <div id="Escrever_Nome">
+  </div>  
+    <div><span id="setinha">&#x2193;</span></div> |
+    <div id="opcoesAlterar">
+      <button id="alterarNome">Alterar Nome</button>
+      <div id="fotoPerfilContainer">
+        <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+        <button id="carregar_imagem">Carregar Imagem</button>
+        <input type="file" id="upload" style="display:none" accept="image/*" />
+      </div>
+    </div>
+  </div>
+ 
+    <p></p>
+
+ <div id="conteudo"></b>
+
+ <h1>Sobre o Trilha de Tinta</h1>
+Bem-vindo ao Trilha de Tinta! Sou Mizuchi, e este é um espaço onde compartilho meu hobby de desenhar. Embora minhas obras não estejam no nível dos artistas mencionados em alguns textos e reflexões aqui, desenhar é uma paixão que cultivo por prazer e que quero dividir com você.
+Ao criar este site, meu objetivo não foi apresentar obras de arte profissionais, mas sim compartilhar uma parte de mim através dos meus desenhos. Cada traço, cada personagem e cada cenário refletem um pouco das minhas experiências, pensamentos e emoções. Desenhar é para mim uma forma de expressão e relaxamento, algo que faço para me desconectar do mundo e me conectar comigo mesmo.
+Por isso, convido você a explorar este site com um olhar aberto e acolhedor. Tente apreciar as obras sem um olhar extremamente crítico, como se estivéssemos tendo uma conversa de fim de tarde, onde compartilhamos histórias, ideias e reflexões de forma leve e descontraída. Quero que o Trilha de Tinta seja um lugar onde você possa se sentir à vontade, como se estivesse entre amigos.
+Este site é mais do que apenas uma galeria de desenhos; é um espaço de compartilhamento e troca. Você encontrará não apenas minhas obras, mas também reflexões sobre o processo criativo, dicas e tutoriais que espero serem úteis para outros entusiastas da arte. Acredito que a arte deve ser acessível e descomplicada, afinal dizem que a sabedoria está na simplicidade.
+Além dos desenhos, gosto de escrever sobre as inspirações por trás de cada peça. Às vezes, uma simples caminhada na rua ou uma música tocando ao fundo podem dar origem a uma nova criação. Gosto de pensar no Trilha de Tinta como um diário visual e escrito, onde cada entrada é um um rapido vislumbre do mundo como o vejo.
+Espero que você aproveite essa jornada artística, não tenha medo de tentar e errar apenas persista e tudo dará certo.<br> 
+Quem sabe, talvez você também encontre inspiração para pegar um lápis e começar a desenhar! E se você já desenha, adoraria ver suas criações e ouvir suas histórias.<p>
+
+<h2>Bugs</h2>
+
+Este site foi feito por uma única pessoa, no caso, eu com a ajuda de mais um amigo. Portanto, podem ocorrer bugs e outros problemas, mas peço paciência, pois também estamos aprendendo! Haha.
+
+<h3>Quando a aba de historias estiver pronta e você for desenhar aqui, siga as regras.</h3>
+
+<ul>
+  <li>Não desenhar coisas com conteúdo violento ou sexual. Lembre-se que aqui é um espaço para esfriar a cabeça e contar boas histórias de maneira respeitosa.</li>
+  <li>Não é permitido desenhar pessoas públicas ou não. Lembre-se que isso pode envolver direito de imagem e privacidade. A proposta dos desenhos é olhar para coisas simples, como objetos, animais, ou coisas do tipo.</li>
+  <li>Não é permitido desenhar coisas que remetam a partidos políticos, sociais, religiosos ou de natureza extremista (de qualquer natureza). Isso pode criar confusões por divergências ideológicas, o que não é a proposta do "Trilha de Tinta".</li>
+  <li>Cuidado ao escrever. Evite palavras de baixo calão ou obscenas. Lembre-se que aqui é um ambiente respeitoso para compartilhar ideias.</li>
+  <li>Seja respeitoso com as opiniões alheias. A troca de ideias é importante, mas sempre com respeito pelas diferentes perspectivas.</li>
+  <li>Incentive a criatividade e a experimentação. O "Trilha de Tinta" é um lugar para explorar novas formas de desenhar, então sinta-se livre para tentar coisas novas, sem medo de errar.</li>
+  <li>Compartilhe o processo criativo. Não é só sobre o resultado final, mas também sobre como você chegou lá. Compartilhar o caminho pode ser inspirador para outros.</li>
+  <li>Seja transparente sobre o uso de referências. Se você usou alguma referência para o seu trabalho, é importante mencioná-la, reconhecendo o esforço dos outros.</li>
+  <li>Cuidado com a originalidade. Evite reproduzir obras inteiras de outros artistas e procure sempre adicionar sua própria visão às suas criações.</li>
+</ul>
+
+
+
+</div>
+<script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+ </body>
+
+
+</html>

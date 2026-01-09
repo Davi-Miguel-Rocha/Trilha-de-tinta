@@ -1,0 +1,86 @@
+<!DOCTYPE hmtl>
+
+<html>
+  <head>
+    <title>Obras | trilha de tinta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+
+     <style>
+
+
+
+body {
+  background-image: url('static/Obras/home.jpg');
+  background-size: cover;
+  background-position: center;
+}     
+
+
+
+
+
+    
+    </style>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+   
+    <div class="navegacao">
+      <a href="{{ url_for('index') }}"> HOME </a> |
+      <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+      <a href="{{ url_for('obras') }}"> OBRAS </a> |
+      <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+      <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+      <div id="Escrever_Nome">
+    </div>  
+      <div><span id="setinha">&#x2193;</span></div> |
+      <div id="opcoesAlterar">
+        <button id="alterarNome">Alterar Nome</button>
+        <div id="fotoPerfilContainer">
+          <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+          <button id="carregar_imagem">Carregar Imagem</button>
+          <input type="file" id="upload" style="display:none" accept="image/*" />
+        </div>
+      </div>
+    </div>
+    
+  
+   <p></p>
+
+   <div class="texto">
+
+      <img src="static/Obras/Sapo.jpg" width="500" height="500" class="quadro" alt="Desenho de um sapo usando uma folha como guarda-chuva">
+
+   <p id="iden">
+    Sapos podem ser curiosamente fofos dependendo do ponto de vista. Para mim, os sapos são sim bem fofos. Lembro-me vagamente de quando eu era criança e costumava olhar para os sapos, reparando naquela expressão meio "séria" que eles parecem ter, e lembrar de espadachins do Japão antigo. Também lembro de, em algumas ocasiões, até imaginá-los como aqueles personagens de filme que quase sempre são sérios e ríspidos, como muitos filmes retratam por aí.
+    Quando pintei "Chuva Gentil", estava pensando em soluções criativas. Certa vez, li uma frase que dizia: "Criatividade é o talento de tornar qualquer situação uma oportunidade de testar ideias novas." Por isso, tive a ideia do sapo estar usando uma folha como guarda-chuva. Para o cenário, lembrei de uma ocasião em que eu estava no ponto de ônibus e estava chovendo. Não é incomum que, por onde vivo, depois da chuva, se aviste um ou outro sapo pulando em direção a alguma moita ou para dentro de algum matagal mais denso, principalmente quando está anoitecendo. Então, é relativamente simples entender como tive a ideia para essa obra.
+    Além de soluções criativas, pensei em retratar um pouco de tranquilidade também. Quando nos pegamos lembrando (ou tentando lembrar) do passado, voltamos ao momento presente e pensamos: "Eu estou bem mais forte agora, bem melhor." Isso me faz pensar a respeito das diferentes fases da vida e do desenvolvimento pessoal, profissional ou qualquer contexto de desenvolvimento que se pense. Sapos têm seu ciclo de desenvolvimento dividido em estágios, assim como as vidas que vivemos. Num contexto profissional, começamos como aprendizes, depois estagiários, efetivos e assim por diante.
+    Pensando nessa ótica, momentos bons não são para sempre, assim como momentos ruins também não são. Independentemente de qual seja a fase que esteja passando, pense sempre em como ser adaptável a todas as situações que conseguir conceber. Sapos são seres que se adaptaram a inúmeros tipos de ambiente, inúmeros tipos de alimentação, entre outras coisas. A lição que aprendo com os sapos é ser adaptável e entender que a vida é feita de estágios e que preciso estar preparado para me adaptar a todos eles, sejam eles ruins ou bons.
+<p>
+ </div>
+ <p><b style="color: black;">"Chuva gentil" obra da autoria de Mizuchi(eu)</b></p>
+
+
+ <div style="display: flex; justify-content: space-between; padding: 20px;">
+  <a href="{{ url_for('proximo') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">&lt;-- ANTERIOR</b>
+  </a>
+
+  <a href="{{ url_for('proximo3') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">PRÓXIMO --&gt;</b>
+  </a>
+</div>
+
+
+
+
+
+<script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+
+  </body>  
+</html>

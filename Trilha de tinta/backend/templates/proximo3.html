@@ -1,0 +1,83 @@
+<!DOCTYPE hmtl>
+
+<html>
+  <head>
+    <title>Obras | trilha de tinta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+
+     <style>
+
+body {
+  background-image: url('static/Obras/home.jpg');
+  background-size: cover;
+  background-position: center;
+}     
+
+
+
+
+
+
+
+    
+    </style>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="navegacao">
+      <a href="{{ url_for('index') }}"> HOME </a> |
+      <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+      <a href="{{ url_for('obras') }}"> OBRAS </a> |
+      <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+      <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+      <div id="Escrever_Nome">
+    </div>  
+      <div><span id="setinha">&#x2193;</span></div> |
+      <div id="opcoesAlterar">
+        <button id="alterarNome">Alterar Nome</button>
+        <div id="fotoPerfilContainer">
+          <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+          <button id="carregar_imagem">Carregar Imagem</button>
+          <input type="file" id="upload" style="display:none" accept="image/*" />
+        </div>
+      </div>
+    </div>
+    
+    
+  
+   <p></p>
+
+   <div class="texto">
+
+ <img src="static/Obras/dragao.jpg" width="500" height="500" class="quadro" alt="Desenho de um dragão sentado em uma pedra">
+
+   <p id="iden">
+    Em uma ocasião, parei para observar uma paisagem que, embora bonita, era vazia e solitária. Então, me sentei e tirei um tempo para refletir sobre essa percepção. Decidi não entrar no mérito da psicologia a respeito da solitude, uma vez que não sou da área, mas sim focar na percepção artística que tive sobre essa condição da vida.
+    Dragões, em algumas culturas, geralmente são vistos como símbolos de poder e sabedoria. Então, pensei que ser poderoso ou tornar-se tão poderoso como um dragão teria como preço a solidão, devido ao simples fato de que tudo tem um preço. Por exemplo, para um atleta que deseja vencer um torneio, ele deve treinar incansavelmente para alcançar essa meta, abdicando de uma noite de festa ou de uma refeição gordurosa, como uma deliciosa pizza numa sexta-feira à noite. Acredito que a solidão assuste as pessoas por um fator biológico e por não conhecerem a si mesmas, não suportando a própria companhia. O fator biológico se refere ao fato de que humanos, evolutivamente falando, são mamíferos sociais e, portanto, necessitam de algum nível de contato com seus semelhantes. Porém, não suportar a própria companhia é algo mais intrínseco à pessoa e às suas vivências anteriores.
+    Pensando nisso, decidi desenhar um dragão jovem cujas escamas nunca foram tocadas pelo carinho e amor de terceiros. Um dragão cuja solidão é algo inerente à sua própria existência e ao caminho que ele escolheu. A cor branca de seu corpo representa o desprendimento das coisas infrutíferas e o autorefinamento, assim como a confecção de uma espada que só ganha seu aspecto prateado e afiado após um árduo processo de marteladas para remover suas impurezas.
+<p>
+ </div>
+
+ <p><b style="color: black;">"A solitude do dragão imperador" obra da autoria de Mizuchi (eu)</b></p>
+
+ <div style="display: flex; justify-content: space-between; padding: 20px;">
+  <a href="{{ url_for('proximo2') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">&lt;-- ANTERIOR</b>
+  </a>
+
+  <a href="{{ url_for('proximo4') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">PRÓXIMO --&gt;</b>
+  </a>
+</div>
+
+<script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+  </body>  
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE hmtl>
+
+<html>
+  <head>
+    <title>Obras | trilha de tinta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+
+     <style>
+
+body {
+  background-image: url('static/Obras/home.jpg');
+  background-size: cover;
+  background-position: center;
+}     
+
+
+
+
+
+    
+    </style>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="navegacao">
+      <a href="{{ url_for('index') }}"> HOME </a> |
+      <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+      <a href="{{ url_for('obras') }}"> OBRAS </a> |
+      <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+      <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+      <div id="Escrever_Nome">
+    </div>  
+      <div><span id="setinha">&#x2193;</span></div> |
+      <div id="opcoesAlterar">
+        <button id="alterarNome">Alterar Nome</button>
+        <div id="fotoPerfilContainer">
+          <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+          <button id="carregar_imagem">Carregar Imagem</button>
+          <input type="file" id="upload" style="display:none" accept="image/*" />
+        </div>
+      </div>
+    </div>
+    
+   <p></p>
+
+   <div class="texto">
+
+     <img src="static/Obras/carpa.jpg" width="500" height="500" class="quadro" alt="Desenho de uma carpa Flutuante">
+
+   <p id="iden">
+    Apesar de carpas não serem tão comuns por onde vivo, nas poucas ocasiões em que pude interagir com elas, fiquei encantado com a elegância com que nadam. Elas nadam tão gentilmente e tão calmamente que podem acalmar o espírito de qualquer pessoa. Quando as observei, pareciam estar dançando uma dança leve e tranquila. Apesar dessa elegância e tranquilidade, em muitas culturas, carpas são símbolos de resiliência e persistência.
+    Quando eu era criança, ouvi uma lenda sobre uma carpa que subiu uma cachoeira nadando contra a corrente e, quando chegou ao topo, se tornou um grande dragão. A mensagem dessa história foi clara para mim, mesmo quando criança: se roubam, não roubo; se matam, não mato; se dormem, trabalho; se desistem, continuo.
+    O dragão da lenda é uma representação do apogeu de alguém que seguiu até o fim o que apelidei carinhosamente de "caminho da carpa", um nome para a filosofia que adotei quando criança. Quando pintei a "Dança da Carpa Flutuante", pensei em brincar um pouco com o surrealismo e ironizar um pouco meu ceticismo, de forma que transparecesse a calma e tranquilidade das carpas. Agora, mais velho, me lembrei de uma ocasião não tão antiga que ocorreu em uma de minhas viagens, em que, por acaso, encontrei um lago com algumas carpas grandes, a que mais me chamou a atenção foi uma carpa maior, branco-alaranjada, pois ela era consideravelmente maior que as outras, mas nadava lentamente, com calma, mas surpreendentemente com certa imponência. Havia alguns patos brancos que as outras carpas menores evitavam bastante; porém, essa carpa maior passava por eles como se tivesse plena noção de seu tamanho. Talvez ela apenas estivesse habituada à presença dos patos, mas achei curioso como essa carpa parecia segura de si, o que me fez refletir ainda mais sobre calma e atitude calma.
+    Cheguei à conclusão de que ter uma atitude calma não significa ser apático ou indiferente com as coisas à sua volta, e muito menos ter arrogância no olhar e na postura. Significa ter calma para persistir e para agir, igualmente perceber as coisas de forma detalhada e não perder detalhes. A calma vem com a disciplina e a consistência, e ao contrário também. É fato que calma e disciplina estão interligadas: sem calma, você se frustra e perde consistência e, portanto, não desenvolve sua disciplina. Não se force a ter uma atitude calma e não se force a ter disciplina. Defina seu objetivo e persista; a disciplina se mostrará vital, e você irá aprender a ter disciplina.
+<p>
+ </div>
+  
+ <p><b style="color: black;">"Dança da carpa Flutuante" obra da autoria de Mizuchi(eu)</b></p>
+
+ <div style="display: flex; justify-content: space-between; padding: 20px;">
+  <a href="{{ url_for('obras') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">&lt;-- ANTERIOR</b>
+  </a>
+
+  <a href="{{ url_for('proximo2') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">PRÓXIMO --&gt;</b>
+  </a>
+</div>
+
+
+
+
+
+
+<script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+
+
+  </body>  
+</html>

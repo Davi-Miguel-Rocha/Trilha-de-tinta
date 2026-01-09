@@ -1,0 +1,85 @@
+<!DOCTYPE hmtl>
+
+<html>
+  <head>
+    <title>Obras | trilha de tinta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+
+     <style>
+
+     body {
+  background-image: url('static/Obras/home.jpg');
+  background-size: cover;
+  background-position: center;
+}     
+
+
+    
+    </style>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  
+    <div class="navegacao">
+      <a href="{{ url_for('index') }}"> HOME </a> |
+      <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+      <a href="{{ url_for('obras') }}"> OBRAS </a> |
+      <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+      <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+      <div id="Escrever_Nome">
+    </div>  
+      <div><span id="setinha">&#x2193;</span></div> |
+      <div id="opcoesAlterar">
+        <button id="alterarNome">Alterar Nome</button>
+        <div id="fotoPerfilContainer">
+          <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+          <button id="carregar_imagem">Carregar Imagem</button>
+          <input type="file" id="upload" style="display:none" accept="image/*" />
+        </div>
+      </div>
+    </div>
+    
+  
+   <p></p>
+
+   <div class="texto">
+
+   <img src="static/Obras/pardal.jpg" width="500" height="500" class="quadro" alt="Desenho de um pardal molhado">
+
+   <p id="iden">
+   Desde criança, sempre achei os pardais muito bonitos e até fofos, eu diria. São aves extremamente comuns, e você já deve tê-los visto em muitas ocasiões<br>
+
+Em uma manhã, decidi dar um breve passeio de carro. Durante a madrugada, havia chovido gentilmente por toda a cidade. Acabei indo parar no centro e tive que esperar alguns minutos próximo a uma espécie de praça. Estava tudo úmido e ainda com gotas de chuva. Foi quando ouvi piados vindos de um galho bem próximo ao carro em que eu estava. Pousado nesse galho estava um pequeno pardal. Havia outros com ele, mas este em especial chamou minha atenção por estar com pequenas gotas de chuva em seu corpo. Ele parecia bem calmo e talvez até feliz; era como se o fato de estar molhado não o incomodasse. Interagiu com alguns outros pardais ali presentes, que pareciam indiferentes ao sol ainda fraco que não podia aquecê-los naquela hora da manhã. Parecia que tudo girava em torno de estar presente e de notar onde quer ir, mas também onde está.<br>
+
+Esse breve encontro com essas aves tão pequenas apenas reafirmou uma filosofia que já tinha comigo: é necessário saber onde você está para saber como chegar onde quer. Mirar em objetivos é importante, porém trabalhar com o que se tem agora também é. Miyamoto Musashi, em vários pontos de sua obra "O Livro dos Cinco Anéis", fala sobre equilíbrio, seja físico e mental ou entre habilidades diferentes. Com isso, quero dizer que equilíbrio é necessário em tudo; tudo em demasia pode atrapalhar você. Focar demais em um objetivo futuro pode fazer com que você não enxergue um obstáculo que está em seu caminho, e isso pode fazer você perder tempo pensando em como contorná-lo. Se tivesse equilíbrio entre olhar para o objetivo e para o caminho até ele, poderia tê-lo visto e, quando finalmente chegasse, já saberia como agir.<br>
+
+É extremamente comum ouvir pessoas dizerem a seguinte frase: "Pássaros são livres, podem voar para onde quiserem". De fato, pássaros podem voar para onde quiserem, mas também se cansam, sentem fome e sede. Eles não estão livres de sentir a necessidade de parar um pouco em um galho para se recuperar da fadiga. Nós também nos cansamos às vezes, mesmo querendo continuar a fazer o que estamos fazendo. Porém, uma pausa pode ser justamente a solução para o que você está tentando resolver. Ultrapassar os limites é importante, assim como se esforçar para isso, mas sempre que estiver cansado após um grande esforço em prol de seus objetivos, não se acanhe. Faça como o pardal na obra e descanse um pouco, respire e continue seu caminho.<br>
+
+Quando desenhei e pintei essa obra, eu estava pensando justamente no descanso e na tranquilidade que senti ao observar aquele pequeno pardal. Tudo é uma oportunidade para aprendermos e nos aperfeiçoarmos em nossa profissão, em nosso interior e em nossa visão sobre as situações que vivemos. Confesso que me diverti e apreciei cada momento enquanto desenhava e pintava essa obra, que nomeei de "Depois da Chuva".
+<p>
+ </div>
+   
+ 
+ 
+ 
+ <p><b style="color: black;">"Depois da chuva" obra da autoria de Mizuchi(eu)</b></p>
+   <center><a href="{{ url_for('proximo') }}"><b style="border:3px solid black; background-color:#EEEEED; border-radius: 5px; line-height:10px; padding: 10px 20px;">PROXIMO --> </b></a></center>
+  
+  
+
+
+
+
+
+
+
+
+   <script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+  
+  </body>  
+</html>

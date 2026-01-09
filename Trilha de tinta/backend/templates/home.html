@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home trilha de tinta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+
+body {
+  background-image: url("static/Obras/kanagawa.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cli {
+    border: 3px solid black;
+    font-size: medium;
+}
+
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+
+
+</head>
+
+<body>
+
+  <div class="navegacao">
+    <a href="{{ url_for('index') }}"> HOME </a> |
+    <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+    <a href="{{ url_for('obras') }}"> OBRAS </a> |
+    <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+    <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+    <a href="{{ url_for('inspiracao') }}"> CLIQUE AQUI PARA SE INSPIRAR </a> |
+    <div id="Escrever_Nome">
+  </div>  
+    <div><span id="setinha">&#x2193;</span></div> |
+    <div id="opcoesAlterar">
+      <button id="alterarNome">Alterar Nome</button>
+      <div id="fotoPerfilContainer">
+        <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+        <button id="carregar_imagem">Carregar Imagem</button>
+        <input type="file" id="upload" style="display:none" accept="image/*" />
+      </div>
+    </div>
+  </div>
+
+  <div id="conteudo"><h4><div class="texto">"Tudo o que produzi antes dos setenta anos não vale a pena ter em conta. Aos setenta e três anos aprendi um pouco sobre a estrutura real da natureza, de animais, plantas, árvores, pássaros, peixes e insetos. Em consequência, quando tiver oitenta anos, terei feito ainda mais progressos. Aos noventa penetrarei no mistério das coisas; aos cem certamente terei chegado a um estágio maravilhoso; e quando eu tiver cento e dez, tudo o que eu fizer, seja um ponto ou uma linha, estará vivo. Peço aos que vivem tanto quanto eu que vejam se não cumpro a minha palavra. Escrito aos setenta e cinco anos por mim, uma vez Hokusai, hoje Gwakyo Rojin, o velho louco por desenhar."</h4>
+
+    <p> Eis aqui uma fala de um dos artistas que mais possuo apreço, senhor Katsushika Hokusai, Hokusai me parece ter sido um homem muito otimista alguém fascinado pelo que vazia e determinado a melhorar, mesmo com esse pensamento de sempre buscar melhorias, em sua fala quando diz "Tudo que produzi antes dos setenta anos não vale a pena ter em conta..." ele demonstra que não possui apego ao passado como também não parece sentir ansiedade para com o futuro, isso vai em confronto aos tempos que vivemos hoje, onde se não estamos pensando em algo que se foi, tememos o que está por vir, Hokusai com essas breves palavras nos ensina que o passado serve de aprendizado e que é inalteravel e que se não for para ser lembrado com carinho, então que ao menos não o remoamos para martirizar a nos mesmos, assim como Hokusai devemos olhar para o futuro com entusiasmo, como oportunidade para sermos a tão comentada hoje "melhor versão".</p>
+    <p>
+    Desenhar e pintar também foi uma prática realizada por outro homem igualmente disciplinado e determinado. Homem este que também viveu no período Edo. Me refiro a Myamoto Musashi, um samurai errante que venceu mais de 60 duelos de forma invicta. Musashi também foi filósofo e pintor, autor de pinturas como Koboku Meikakuzu e de livros como Go rin no sho, ou "O Livro dos Cinco Anéis" como é popularmente conhecido.
+ 
+    Musashi era um guerreiro implacável, ágil e extremamente estratégico. Porém, em suas pinturas vejo muita calma e serenidade, especialmente na que mencionei mais cedo, Koboku Meikakuzu. Esta parece ter sido pintada com tanta calma e concentração, mas ao mesmo tempo com serenidade, mostrando que Musashi foi um homem complexo e dedicado a muitas coisas.
+    </p>
+   
+    Com Musashi e Hokusai, aprendemos algo: seja a ser otimista com o futuro, a arte de caminhar sozinho ou a ter disciplina. Inegavelmente, são todas lições muito preciosas, especialmente hoje em dia, quando enfrentamos males como depressão e ansiedade. Espero que aqui você possa encontrar algum conforto para aprender e refletir. Veja este site como uma maneira de se conectar um pouco mais com seu lado criativo e de parar de pensar em tantas coisas. Tudo em excesso faz mal, seja pensar demais, falar demais ou se calar demais. É necessário buscar equilíbrio e paz. E por que não fazer isso deixando um pouco de lado esse mundo barulhento lá fora e vindo aqui para ler e se conectar consigo mesmo enquanto aprende algo novo que será útil para você de várias maneiras diferentes?
+ 
+    <p> 
+ 
+    Na barra acima, eu convido você a clicar na opção 'Obras' para observar algumas de minhas obras. Como mencionei anteriormente, não sou um pintor ou artista como Hokusai; entretanto, amo arte e gosto de desenhar. Gostaria de compartilhar com você algumas reflexões junto a esses desenhos, e também gostaria de compartilhar dicas de desenhos. Para isso, basta clicar na opção ao lado de 'Obras'. Espero que minhas dicas sejam de alguma utilidade para quem quer que esteja vendo essa humilde tentativa de compartilhar dicas para ajudar a aprender algo novo.
+ 
+    <div id="cli">Clique aqui !</div>
+    </div>
+    </p>
+    </div>
+
+  <script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+
+</body>
+</html>

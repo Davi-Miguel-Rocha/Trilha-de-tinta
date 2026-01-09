@@ -1,0 +1,83 @@
+<!DOCTYPE hmtl>
+
+<html>
+  <head>
+    <title>Obras | trilha de tinta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+
+     <style>
+body {
+  background-image: url('static/Obras/home.jpg');
+  background-size: cover;
+  background-position: center;
+}     
+
+
+
+
+
+    
+    </style>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  
+     
+    <div class="navegacao">
+      <a href="{{ url_for('index') }}"> HOME </a> |
+      <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+      <a href="{{ url_for('obras') }}"> OBRAS </a> |
+      <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+      <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+      <div id="Escrever_Nome">
+    </div>  
+      <div><span id="setinha">&#x2193;</span></div> |
+      <div id="opcoesAlterar">
+        <button id="alterarNome">Alterar Nome</button>
+        <div id="fotoPerfilContainer">
+          <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+          <button id="carregar_imagem">Carregar Imagem</button>
+          <input type="file" id="upload" style="display:none" accept="image/*" />
+        </div>
+      </div>
+    </div>
+    
+   <p></p>
+
+   <div class="texto">
+
+   <img src="static/Obras/rosa.jpg" width="500" height="500" class="quadro" alt="Desenho de uma flor rosa com suas petálas molhadas">
+
+   <p id="iden">
+    Eu costumo tirar alguns minutos para refletir durante o dia, especialmente nas minhas raras janelas de tempo livre. Em certo momento, durante uma dessas pausas, notei que havia uma flor rosa próxima ao meu sapato. Imediatamente, afastei meu pé para não pisar nela por acidente, mas comecei a observá-la com mais atenção.
+    Ela tinha sutis gotas de água em suas delicadas pétalas, mas não havia sinais de manchas de água ou algo do tipo. Entretanto, quando as gotas de água ficavam grandes, a pétala se dobrava, levando a gota até a raiz da flor. Era como se ela estivesse guiando-as de forma tão despreocupada, tão doce e tão cuidadosa.<br>
+    Era um dia frio e nublado, porém não havia sinais de chuva, o que me fez pensar que talvez alguém a tivesse regado. Voltei às minhas atividades diárias, mas fiquei pensando naquela flor. Pensei em coisas como: "Aquelas gotas não deveriam estar ali; deveriam ter regado a raiz da flor, não molhado suas pétalas." No entanto, em meio aos estudos e pesquisas que eu realizava no momento, entendi que é possível tirar proveito de qualquer situação, seja ela calculada ou não. Basta ter um pouco de cuidado ao refletir, e as coisas ficarão claras.<br>
+    Lembrando daquela flor, decidi pintar "A Flor do Jardim". Aquela flor me fez lembrar que, durante o estresse do dia a dia, esquecemos de observar as oportunidades que temos de transformar tudo ao nosso redor em ferramentas para nosso crescimento. Basta pensar com clareza. Assim como a flor não se manchou com o sol e a chuva, não podemos permitir que as situações complexas ao nosso redor manchem nossa mente com pensamentos e mágoas desnecessárias.<br>
+    Passei a pensar que algo tão pequeno e frágil conseguiu me mostrar algo de tamanha importância e complexidade para ser colocado em prática. Contudo, estou feliz por ter observado essa sábia flor.
+
+ </div>
+
+
+ <p><b style="color: black;">"A flor do jardim" obra da autoria de Mizuchi (eu)</b></p>
+ 
+ <div style="display: flex; justify-content: space-between; padding: 20px;">
+  <a href="{{ url_for('proximo3') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">&lt;-- ANTERIOR</b>
+  </a>
+
+  <a href="{{ url_for('manga') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">PRÓXIMO --&gt;</b>
+  </a>
+</div>
+
+
+  <script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+  </body>  
+</html>

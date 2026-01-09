@@ -1,0 +1,87 @@
+<DOCTYPE hmtl>
+<html>
+<head>
+	<title>Aprenda a desenhar</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+	<style>
+  
+
+  body {
+  background-image: url("static/Obras/aprender.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+       a:hover{
+          
+        color: royalblue;  
+        
+
+     }
+
+
+
+
+	</style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    
+
+</head>
+<body>
+
+  <div class="navegacao">
+    <a href="{{ url_for('index') }}"> HOME </a> |
+    <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+    <a href="{{ url_for('obras') }}"> OBRAS </a> |
+    <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+    <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+    <a href="{{ url_for('inspiracao') }}"> CLIQUE AQUI PARA SE INSPIRAR </a> |
+    <div id="Escrever_Nome">
+  </div>  
+    <div><span id="setinha">&#x2193;</span></div> |
+    <div id="opcoesAlterar">
+      <button id="alterarNome">Alterar Nome</button>
+      <div id="fotoPerfilContainer">
+        <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+        <button id="carregar_imagem">Carregar Imagem</button>
+        <input type="file" id="upload" style="display:none" accept="image/*" />
+      </div>
+    </div>
+  </div>
+  
+	
+    <div class="divtex">
+
+
+
+
+	<h3>Como aprender a desenhar ?</h3>
+     
+     Essa é uma pergunta realmente muito frequente, porém, antes de prosseguir no seu aprendizado, tenha em mente quatro coisas:
+
+<ol>
+    <li>Você está aprendendo, não se cobre tanto e comemore pequenas conquistas.</li>
+    <li>Seja consistente. Vamos usar um exemplo de treinamento físico: se você treinar uma vez por ano, nunca terá resultado. Porém, se treinar algumas vezes por semana durante um ano, é quase certo que terá bons resultados.</li>
+    <li>Experimente desenhar coisas que gosta para reforçar o que você aprendeu lendo os conteúdos da página.</li>
+    <li>Por último, mas não menos importante, sempre busque aprimorar o que você aprendeu e refinar o que já sabe.</li>
+</ol>
+Desenhar, como quase tudo na vida, leva algum tempo para aperfeiçoar e aprender. Portanto, se quiser <b>MESMO</b> aprender a desenhar, dedique alguns minutos do seu dia para ler e praticar. Aqui vou ensiná-lo(a) conceitos e a base para desenhar, mas devo deixar claro que este é o modo como eu aprendi. Portanto, se você tem uma técnica diferente ou um jeito de ensinar que julgue mais adequado, tente relembrar o que leu na aba de avisos e tenha em mente que estou escrevendo para quem quer aprender de um jeito simples e direto. Talvez, no futuro, você desenvolva suas próprias técnicas de desenho e, quem sabe, até as passe para frente. Dito isso, desejo bons estudos a todos!
+
+
+
+    </div>
+
+    <a href="{{ url_for('aula1') }}" style="text-decoration: none; display: flex; justify-content: center;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px; display: inline-block; margin: 20px auto; text-align: center;">
+        Aula 1
+    </b>
+</a>
+  
+<script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+</body>
+</html>

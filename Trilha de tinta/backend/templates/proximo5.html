@@ -1,0 +1,92 @@
+<!DOCTYPE hmtl>
+
+<html>
+  <head>
+    <title>Obras | trilha de tinta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+
+     <style>
+
+body {
+  background-image: url('static/Obras/home.jpg');
+  background-size: cover;
+  background-position: center;
+}     
+
+
+
+
+
+    
+    </style>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="navegacao">
+      <a href="{{ url_for('index') }}"> HOME </a> |
+      <a href="{{ url_for('avisos') }}"> AVISOS </a> |
+      <a href="{{ url_for('obras') }}"> OBRAS </a> |
+      <a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+      <a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+      <div id="Escrever_Nome">
+    </div>  
+      <div><span id="setinha">&#x2193;</span></div> |
+      <div id="opcoesAlterar">
+        <button id="alterarNome">Alterar Nome</button>
+        <div id="fotoPerfilContainer">
+          <img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+          <button id="carregar_imagem">Carregar Imagem</button>
+          <input type="file" id="upload" style="display:none" accept="image/*" />
+        </div>
+      </div>
+    </div>
+    
+  
+   <p></p>
+
+   <div class="texto">
+
+   <img src="static/Obras/Sapo_S.jpg" width="500" height="500" class="quadro" alt="Desenho de um sapinho de chapéu olhando para cima enquanto está sentado em uma folha">
+
+   <p id="iden">
+
+Conhecimento sempre foi meu objetivo primordial e, por conseguinte, a busca por ele sempre consumiu uma quantidade considerável de tempo. Esse tempo, no entanto, é motivo de orgulho, pois foi dedicado a algo de grande valor. Entretanto, conforme os anos passam e você acumula cada vez mais conhecimento, o mundo vai perdendo parte de seu encanto. Já não surgem mais perguntas como: "Por que o céu é azul?", pois você já tem a resposta. E, se for um pouco mais além, pode se tornar um cético – não ao ponto de duvidar que o céu é azul, mas de sempre buscar a resposta mais lógica para toda e qualquer questão, quase de forma automática. Assim como o frio é apenas a ausência de calor, o desconhecido é simplesmente a ausência de conhecimento. E, como o desconhecido tende a assustar, a busca por compreendê-lo e expandir seus horizontes faz com que ele se transforme em mais uma peça dentro da vastidão que compõe o seu saber. Se necessário, você aprenderá a evitá-lo, contorná-lo ou usá-lo a seu favor.
+<br>
+<br>
+
+Conhecimento não se limita à habilidade de resolver cálculos complexos ou criar invenções revolucionárias. Ele também está no simples: saber como e quando colher determinada fruta, como e quando falar, agir, pensar ou executar. Tudo isso é conhecimento. Um termo frequentemente associado a ele é "aprofundar", como em "vou aprofundar meus conhecimentos em matemática" ou "quero me aprofundar nesse assunto". Para entender melhor essa ideia, imagine que nossa realidade é um lago. Para alguns, esse lago parece turvo; para outros, cristalino. Aqueles que o veem como cristalino conseguem identificar onde ele é profundo e onde é raso, pois exploraram e compreenderam suas águas. Assim, transitam de um lado a outro como se caminhassem em um tranquilo fim de tarde. Ainda há mistérios, mas a clareza do lago dissipa o medo do desconhecido, substituindo-o por entusiasmo para compreender e usar o que antes era enigmático.
+<br>
+<br>
+Por isso, desenhei e pintei "O sapo que se tornou sábio". Ele representa um sapo que observa tranquilamente o ambiente ao seu redor, cheio de entusiasmo para refinar o conhecimento que já possui e adquirir ainda mais. Assim como ele, vejo o lago como cristalino, e sua perspectiva reflete uma prioridade que temos em comum: adquirir conhecimento.
+           
+
+
+ </div>
+
+
+ <p><b style="color: black;">"O sapo que se tornou sábio" obra da autoria de Mizuchi (eu)</b></p>
+
+ <div style="display: flex; justify-content: space-between; padding: 20px;">
+  <a href="{{ url_for('manga') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">&lt;-- ANTERIOR</b>
+  </a>
+
+  <a href="{{ url_for('manga') }}" style="text-decoration: none;">
+    <b style="border: 2px solid black; padding: 10px 20px; background-color: white; color: black; border-radius: 5px;">PRÓXIMO --&gt;</b>
+  </a>
+</div>
+
+
+
+
+
+  <<script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+  </body>  
+</html>

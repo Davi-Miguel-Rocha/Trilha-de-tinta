@@ -1,0 +1,101 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>AULA 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-witdth,initial-scale=1.0">
+	<style>
+
+body {
+  background-image: url("static/Obras/koi.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+	</style>
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+</head>
+
+ <body>
+
+
+	<div class="navegacao">
+		<a href="{{ url_for('index') }}"> HOME </a> |
+		<a href="{{ url_for('avisos') }}"> AVISOS </a> |
+		<a href="{{ url_for('obras') }}"> OBRAS </a> |
+		<a href="{{ url_for('aprenda') }}"> APRENDA A DESENHAR </a> |
+		<a href="{{ url_for('beneficios') }}"> BENEFÍCIOS DE DESENHAR </a> |
+		<div id="Escrever_Nome">
+	  </div>  
+		<div><span id="setinha">&#x2193;</span></div> |
+		<div id="opcoesAlterar">
+		  <button id="alterarNome">Alterar Nome</button>
+		  <div id="fotoPerfilContainer">
+			<img id="perfilImage" src="" alt="Foto de perfil" width="50" height="50"/>
+			<button id="carregar_imagem">Carregar Imagem</button>
+			<input type="file" id="upload" style="display:none" accept="image/*" />
+		  </div>
+		</div>
+	  </div>
+
+<div id="quadro">
+   	 <img src="static/Aula 1/passaro.jpg" id="quadro" width="500" height="500">
+   	   <div>
+   		     <p>
+   	 <h4>Formas geométricas</h4>
+Para iniciarmos essa jornada de aprendizado, vamos entender como mapear o que vamos desenhar. Para exemplificar melhor, vamos desenhar um pássaro simples e entender como usar formas geométricas para desenhar o que desejamos. Observe atentamente o nosso pássaro simples e eu o descreverei para você de um jeito extremamente simples.
+   	 <ol>
+   	 	<li>Começe desenhando um circulo</li>
+
+   	 	<li> Depois desenhe uma forma oval para o corpo</li>
+   	 </ol>
+
+   	 Aqui estamos marcando onde será a cabeça e o corpo, fazemos assim para que nosso passaro não acabe com a cabeça do lugar errado ou que o corpo fique desproporcional ou no formato errado, essa tecnica é usada por muitos artistas e até para desenhar animes mas é uma tecnica que se provou muito eficiente para aprender a desenhar ou até mesmo para artistas mais veteranos.
+
+
+   	         </p>
+       </div>
+</div>
+
+
+   <div id="quadro">
+
+   	 <img src="static/Aula 1/passaro2.jpg" id="quadro" width="500" height="500">
+
+   	     <div>
+           <h4>Conectando ambos</h4>
+           <p>Para o pescoço basta simplismente conectar o circulo com a forma oval assim podemos ter uma noção mais clara doque estamos desenhando.</p>
+   	     </div>	
+   </div>
+
+   <div id="quadro">
+   	    <img src="static/Aula 1/passaro3.jpg" id="quadro" width="500" height="500">
+        <div>
+        	<h4>Dando forma ao desenho</h4>
+        	<p>
+        		Agora vamos dar as características de um pássaro ao desenho. Vamos adicionar o bico e a cauda. É muito importante lembrar que estamos aprendendo sobre rascunho. Esta é basicamente a silhueta do nosso pássaro; podemos ver que, sim, é um pássaro, e já podemos adicionar os detalhes a ele com um pouco mais de segurança.
+        	</p>
+        </div>
+
+
+   </div>
+
+   <div id="quadro">
+   	 <img src="static/Aula 1/passaro5.jpg" id="quadro" width="500" height="500">
+   	    <div>
+         <h4>Rascunho final</h4>
+         <p>
+          Aqui já podemos começar a adicionar os detalhes com base nos rascunhos que fizemos, pois agora já sabemos onde estão as pernas, o bico, as costas, a cauda, a cabeça, etc. Lembre-se de que o rascunho <b>NÃO</b> é para ser bonito; ele serve para te guiar no que você está tentando desenhar. Veja o rascunho como uma referência.<br>
+O rascunho também vai te ajudar a conceber melhor como o produto final será, os sentimentos que quer passar, críticas, estética, entre outras coisas. Por isso, não pule a concepção do rascunho. Recomendo que treine o rascunho sempre que puder.
+         </p>
+   	    </div>
+      
+
+   </div>
+
+   <script src="{{ url_for('static', filename='JS/script.js') }}" defer></script>
+
+</body>
+</html>
