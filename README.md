@@ -10,7 +10,7 @@ O projeto foi pensado como um espaço calmo e contemplativo, inspirado em elemen
 ## 🧠 Objetivo do Projeto
 
 - Compartilhar artes autorais de forma organizada
-- Registrar reflexões e narrativas ligadas a cada desenho
+- Registrar reflexões e narrativas ligadas a cada arte
 - Explorar a integração entre desenvolvimento web e expressão artística
 - Servir como projeto prático de estudo e experimentação em backend e web
 
@@ -74,8 +74,8 @@ Este projeto foi desenvolvido inicialmente de forma local e, após a finalizaç�
 Desenvolvido por Davi Miguel da Rocha Lima  
 Estudante de Ciência da Computação  
 
-GitHub: https://github.com/Davi-Miguel-Rocha  
-LinkedIn: https://www.linkedin.com/in/davi-miguel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+[GitHub:] (https://github.com/Davi-Miguel-Rocha)  
+[LinkedIn:] (https://www.linkedin.com/in/davi-miguel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 
 ## Imagens do site
