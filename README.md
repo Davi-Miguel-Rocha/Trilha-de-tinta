@@ -86,5 +86,6 @@ Estudante de Ciência da Computação
 <img width="1878" height="904" alt="image" src="https://github.com/user-attachments/assets/d33ceb83-fc22-4c47-a27c-853dbe4116b8" />
 
 ### Artes
-<img width="1871" height="908" alt="image" src="https://github.com/user-attachments/assets/110d7108-f14e-4094-bead-b4ccf0d4cb42" />
+<img width="1909" height="905" alt="image" src="https://github.com/user-attachments/assets/4fd58dd7-cabf-4a2a-93cf-582a340f9857" />
+
 
