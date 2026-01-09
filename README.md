@@ -31,7 +31,7 @@ O projeto foi pensado como um espaço calmo e contemplativo, inspirado em elemen
 - Estrutura simples e leve, focada em leitura e contemplação
 - Organização modular para facilitar futuras expansões
 
----
+
 
 ## 📂 Estrutura do Projeto
 
